@@ -1,0 +1,230 @@
+/*----------------
+  Google fonts 
+------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+/*--------------------
+ common style utilities
+ ---------------------*/
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+    overflow: hidden;
+}
+.container::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Banner styles */
+
+#banner{
+    padding-top: 153px;
+    padding-bottom: 86px;
+    height: 700px;
+    background:
+
+            linear-gradient(
+                    rgba(18, 18, 18, 0.75),
+                    rgba(18, 18, 18, 0.75)
+            ),
+
+            url("../images/match.png") fixed;
+}
+.copa_head{
+    color: #FFFFFF;
+    font-size: 64px;
+}
+button{
+   background-color: #E02C6D;
+   width: 168px;
+   height: 44px;
+   margin-top: 27px;
+}
+button a{
+   color: #FFFFFF;
+   text-decoration: none;
+   font-size: 16px;
+ }
+
+
+ /* Football players */
+
+ #footballPlayers{
+     background-color: #ffffff;
+     padding-top: 70px;
+     padding-bottom: 70px;   
+ }
+ .players{
+     display:grid;
+     grid-template-columns: repeat(3, 1fr);
+    
+ }
+ .player{
+     background-color: #FFFFFF;
+     border: 1px solid #f6f6f6;
+     padding: 15px;
+     box-shadow: 0 0 15px gray;
+     margin: 30px;
+     transition: transform 1s ease-in-out;
+ }
+ .player:hover{
+    transform: scale(1.1);
+}
+ .player .player_thumbnail{
+     display: flex;
+     justify-content: center;
+ }
+ .player_info h2{
+    color: #18191F;
+    font-size: 28px;
+    text-transform:unset;
+ }
+ .player_info p{
+     color: #6C6C6C;
+ }
+
+
+ /* Follow us on instagram */
+
+ #followUs{
+     background-color: #f4f5f5;
+     padding-top: 40px;
+     padding-bottom: 40px;
+    
+ }
+ .follows{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+ }
+ .follows .follow_icon .fa-instagram{
+     color: #fc642a;
+     padding-left: 20px;
+     font-size: 40px;
+     font-weight: 700;
+ }
+
+
+ /*  About trophy */
+
+#aboutTrophy {
+    background: linear-gradient(rgba(8, 0, 0, 0.829),rgba(0, 0, 0, 0.7)),url("../images/banner.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 400px;
+    color: #ffffff;
+    background-size: cover;
+    padding-top: 70px;
+    padding-bottom: 380px;
+}
+
+.trophy{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 30px;
+  
+}
+.trophy h2{
+    color: #ffffff;
+    font-weight: 700;
+    padding-bottom: 30px;
+    text-transform: unset;
+}
+.trophy p{
+    color: #bdbcbc;
+}
+.trophy p a{
+  text-decoration: none;
+  color: #bdbcbc;
+}   
+  .trophy a:hover{
+    margin-left: 10px;
+    color: greenyellow;
+  }  
+
+
+ /* Footer styles */
+ #footer{
+     padding-top: 80px;
+     padding-bottom: 63px;
+     background-color:#ffffff;
+ }
+ .football{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ .football_logo{
+    width: 483.87px;
+    height: 110px;
+ }
+ .football_icon .fa{
+    color: #969bab;
+    height: 32px;
+    width: 32px;
+    background-color: #e7e7e8;
+    border-radius: 100%;
+    padding: 8px; 
+ }
+
+
+ 
+ /*-----------------------
+      Media quaries 
+ --------------------*/
+
+
+ /* mobile Device */
+
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .copa{
+        text-align: center;
+    }
+    .follows{
+      display: flex;
+      flex-direction: column;
+     }     
+     .trophy{
+        display: flex;
+        justify-content: center;
+        font-size: 10px;
+        padding: 12px;
+    }
+    .football_logo{
+        display: none;
+     }
+    
+}
+
+/* Tablet Devices */
+@media only screen and (min-width:688px) and (max-width:992px){
+    .container{
+        width: 100%;
+    }
+    .copa{
+       text-align: center;
+    }
+    .trophy{
+        display: flex;
+        justify-content: center;
+        padding: 12px;
+    } 
+}
+
+
+ 
